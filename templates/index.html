@@ -19,8 +19,17 @@
             <option value="Medium">Medium</option>
             <option value="Low">Low</option>
         </select>
-        <input type="submit" value="Add">
+        <input type="submit" value="Add To Do Item">
     </form>
+    <div>
+        <div>
+            <ul>
+                {% for item in task_list %}
+                <li>{{ task }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>
