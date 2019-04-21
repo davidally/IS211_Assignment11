@@ -11,6 +11,7 @@
 <body>
     <h1>To Do List</h1>
     <p>Add something to do to your list.</p>
+    <h3>{{ error_message }}</h3>
     <form method="post" action="/submit">
         <input type="text" name="task" required>
         <input type="text" name="email" required>
@@ -22,7 +23,7 @@
         <input type="submit" value="Add To Do Item">
     </form>
     <form action="/clear" method="post">
-        <input type="submit" name="clear" value="Clear List" />
+        <input type="submit" name="clear" value="Clear" />
     </form>
     <div>
         <div>
